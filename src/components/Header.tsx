@@ -1,13 +1,13 @@
 import React, { FC } from "react";
 
 interface HeaderProps {
-  title: string;
-  subtitle?: string;
+  title?: string;
 }
 
-const Header: FC<HeaderProps> = ({ title, subtitle }) => {
+const Header: FC<HeaderProps> = ({ title }) => {
   return (
     <header
+      title="head"
       style={{
         backgroundImage:
           "url(https://d11tujlfic6kel.cloudfront.net/wallpapers2/081/721/379/072/original/pixel_twinkling_stars.jpg)",

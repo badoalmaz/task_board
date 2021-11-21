@@ -6,8 +6,8 @@ import { addList, setNotification } from "../store/actions";
 import SelectList from "./SelectList";
 
 const CreateNewList: FC = () => {
-  const dispatch = useDispatch();
   const [listName, setListName] = useState("");
+  const dispatch = useDispatch();
 
   const inputChangeHandler = (e: FormEvent<HTMLInputElement>) => {
     setListName(e.currentTarget.value);
@@ -52,7 +52,11 @@ const CreateNewList: FC = () => {
             </div>
           </div>
           <div className="control">
-            <button type="submit" className="button is-black">
+            <button
+              type="submit"
+              className="button is-black"
+              title="tested_button"
+            >
               Create
             </button>
           </div>
