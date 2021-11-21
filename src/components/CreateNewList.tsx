@@ -42,6 +42,8 @@ const CreateNewList: FC = () => {
             <label className="label">List Name</label>
             <div className="control">
               <input
+                id="testId"
+                title="tested-search"
                 type="text"
                 className="input"
                 placeholder="List Name"
